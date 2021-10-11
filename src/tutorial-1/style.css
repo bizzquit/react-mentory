@@ -1,0 +1,16 @@
+.card {
+    display: inline-block;
+    margin: 25px;
+    padding: 15px 25px;
+    border:8px solid rgba(155,159,169, 0.6);
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.date-registered{
+    font-size: 20px;
+}
