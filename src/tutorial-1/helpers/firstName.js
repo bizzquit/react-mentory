@@ -1,5 +1,5 @@
 const firstName = (name) => {
-  return name.split(' ')[0]
+  return name ? name.split(' ')[0] : 'Аноним'
 }
 
 export default firstName

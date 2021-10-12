@@ -7,7 +7,9 @@ const options = {
 }
 
 const dateFormat = (registredAt) => {
-  return registredAt.toLocaleString(locale, options)
+  return registredAt
+    ? registredAt.toLocaleString(locale, options)
+    : 'Дата не указана'
 }
 
 export default dateFormat
