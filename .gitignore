@@ -3,6 +3,8 @@
 package-lock.json
 yarn.lock
 .idea
+.idea*
+.idea/*
 
 # dependencies
 /node_modules
