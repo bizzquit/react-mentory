@@ -1,0 +1,22 @@
+.authForm {
+    display: flex;
+    width:40%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.input {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top:15px;
+    padding:5px;
+}
+
+.btn-form{
+    margin-top:15px;
+    border-radius: 0;
+    width: 100px;
+    border:1px solid grey;
+    font-size: 20px;
+    line-height: 35px;
+}
