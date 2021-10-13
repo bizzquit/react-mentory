@@ -16,14 +16,19 @@ function App({ email = '', password = '' }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!email && !password)
+    if (!email && !password) {
       return alert('Ни одно поле не заполнено! - Не хорошо!!!')
-    else if (!password) return alert('Придумай пароль!!!')
-    else if (!email) return alert('А где e-mail?')
+    }
+    if (!password) {
+      return alert('Придумай пароль!!!')
+    }
+    if (!email) {
+      return alert('А где e-mail?')
+    }
 
-    console.log({ email, password })
-
+    console.log('1', { email, password })
     e.target.reset()
+    email = password = ''
   }
 
   return (
@@ -31,7 +36,7 @@ function App({ email = '', password = '' }) {
       <input
         type="text"
         name="email"
-        onChange={(evt) => changedData(evt)}
+        onChange={changedData}
         className="input input-email"
         placeholder="E-Mail"
       />
@@ -39,7 +44,7 @@ function App({ email = '', password = '' }) {
         type="password"
         className="input inputE-pass"
         name="pass"
-        onChange={(evt) => changedData(evt)}
+        onChange={changedData}
         placeholder="Пароль"
       />
       <button type="submit" className="btn-form">
