@@ -26,7 +26,7 @@ function App({ email = '', password = '' }) {
       return alert('А где e-mail?')
     }
 
-    console.log('1', { email, password })
+    console.log({ email, password })
     e.target.reset()
     email = password = ''
   }
