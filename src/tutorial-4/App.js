@@ -7,7 +7,6 @@ import './App.css'
 
 function App() {
   const [phrases, setPhrases] = React.useState([])
-  const [count, setCount] = React.useState(phrases.length)
 
   const randomIndex = (arr) => {
     return Math.floor(Math.random() * arr.length - 1) + 1
@@ -20,13 +19,11 @@ function App() {
       nounsArr[randomIndex(nounsArr)],
     ].join(' ')
 
-    setCount(count + 1)
-    setPhrases([{ phrase: newPhrase, id: count }, ...phrases])
+    setPhrases([{ phrase: newPhrase, id: phrases.length + 1 }, ...phrases])
   }
 
   const clearListPhrase = () => {
     setPhrases([])
-    setCount(0)
   }
 
   return (
