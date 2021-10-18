@@ -1,0 +1,10 @@
+.cardComment {
+    display:flex;
+    justify-content: space-around;
+}
+
+.btn-delete {
+    height:30px;
+    outline: 0;
+    border:0;
+}
