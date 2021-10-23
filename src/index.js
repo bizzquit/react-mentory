@@ -9,7 +9,8 @@ import './tutorial-6/App.css'
 // './tutorial-3/' - без react`a гольный JS
 // import App from './tutorial-4/App'
 // import App from './tutorial-5/App'
-import App from './tutorial-6/App'
+// import App from './tutorial-6/App'
+import App from './tutorial-7/App'
 
 ReactDOM.render(
   <React.StrictMode>
