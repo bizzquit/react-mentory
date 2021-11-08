@@ -6,7 +6,7 @@ function App() {
   async function getUsers() {
     try {
       let response = await fetch(
-        'https://6178df40aa7f3400174045b46.mockapi.io/users'
+        'https://6178df40aa7f3400174045b4.mockapi.io/users'
       )
       let users = await response.json()
       setUsers(users)
